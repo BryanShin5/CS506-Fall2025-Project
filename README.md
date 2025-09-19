@@ -1,18 +1,17 @@
 # Project Proposal
 
 ## Project Description
-[Provide a clear description of the project.  
-Example: We aim to predict student dining hall traffic using historical usage logs and weather data. This project will let us explore the relationship between environmental factors and student behavior.]
+[This Project aims to predict the number of people playing computer games using STEAM platform at a given date and time period, then further aims to predict the ranking of most played games. The data will be collected from STEAM.]
 
 ## Goals
-- [State your goals clearly, e.g.: Build a predictive model for daily dining hall traffic.]
-- [Identify key factors influencing the outcome.]
-- [Develop a reproducible end-to-end data science pipeline.]
+- [Build a prediction model to predict the number of players playing different games based on the past data of number of players]
+- [Factors that may affect result: Whether it is a working day, time within a day that work ends, Regional time.]
+- [Gather data of number of players every hour from Steam DB, train the model, predict using the model.]
 
 ## Data Collection
-- **Data Sources:** [List specific data sources, e.g., weather API, campus entry logs, survey data, Kaggle dataset.]
-- **Collection Method:** [Explain how you will collect it: API calls, scraping, CSV downloads, surveys, etc.]
-- **Frequency/Timeframe:** [Daily, hourly, weekly; historical vs. real-time.]
+- **Data Sources:** [STEAMDB.info displayes data from STEAM API.]
+- **Collection Method:** [Scrapping from STEAMDB website.]
+- **Frequency/Timeframe:** [Hourly basis]
 
 ## Data Cleaning
 - Handle missing values and inconsistencies.  
