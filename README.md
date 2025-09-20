@@ -14,29 +14,25 @@
 - **Frequency/Timeframe:** [Hourly basis]
 
 ## Data Cleaning
-- Handle missing values and inconsistencies.  
-- Normalize/standardize data formats (e.g., date/time, units).  
-- Merge multiple sources into one dataset.  
+- Handle missing values and inconsistencies (e.g., Promotions, updates, server shutdown, etc).   
+- Standardize data formats (e.g., date/time, units).   
 
 ## Feature Extraction
 - Examples of features to extract:  
-  - [Day of week, time of day, weather conditions, holidays, etc.]  
-  - [Aggregated/engineered features like rolling averages.]  
+  - [Day of week, time of day, player count, name of the game, how old the game is.]  
+  - [Aggregated/engineered features like rolling averages.]
+  - [Possible categorization of the game (may be biased)]
 
 ## Modeling Plan
 We will experiment with several approaches, including:  
-- [Linear regression / logistic regression.]  
-- [Decision trees or random forests.]  
-- [Gradient boosting methods such as XGBoost.]  
-- [Optional: Deep learning if time permits.]  
+- [Regression.]   
+- [Subject to change as we learn more models]  
 
 We will evaluate model performance and select the best one based on accuracy and interpretability.  
 
 ## Visualization Plan
-- Exploratory plots (scatterplots, histograms, correlation heatmaps).  
-- Time series plots to observe trends.  
-- Feature importance plots (for tree-based models).  
-- [Optional: Interactive plots using Plotly or Altair.]  
+- Line chart of number of player over time.  
+- Different chart with features that may possibly affect the number of players.   
 
 ## Test Plan
 - Reserve **20% of the dataset** as a holdout test set.  
