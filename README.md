@@ -12,6 +12,7 @@
 - **Data Sources:** [STEAMDB.info displayes data from STEAM API.]
 - **Collection Method:** [Scrapping from STEAMDB website.]
 - **Frequency/Timeframe:** [Hourly basis]
+- [Will collect data from top 20 games in terms of current players]
 
 ## Data Cleaning
 - Handle missing values and inconsistencies (e.g., Promotions, updates, server shutdown, etc).   
@@ -33,17 +34,16 @@ We will evaluate model performance and select the best one based on accuracy and
 ## Visualization Plan
 - Line chart of number of player over time.  
 - Different chart with features that may possibly affect the number of players.   
-
+- Maybe an interactive plot with an option to plug in name of game and date / time.
 ## Test Plan
-- Reserve **20% of the dataset** as a holdout test set.  
+- training set will consist of data from September to October 
+- Reserve **Data from November** as a holdout test set.  
 - Use **k-fold cross-validation** on the training set to tune models.  
-- Compare metrics such as [RMSE, accuracy, F1-score depending on the problem type].  
 
 ## GitHub & Collaboration Plan
 - Repo will include:  
   - `data/` for datasets (with `.gitignore` for large/raw data).  
   - `notebooks/` for exploration and analysis.  
   - `src/` for reusable code.  
-  - `docs/` for documentation.  
-- Use **issues** and **pull requests** for collaboration and code review.  
+  - `docs/` for documentation.    
 - Submit proposal and final results through this GitHub repo.  
