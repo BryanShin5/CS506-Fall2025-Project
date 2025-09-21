@@ -35,7 +35,7 @@ This project aims to predict the number of people playing computer games on the 
 ## Modeling Plan
 We will experiment with several approaches, including:  
 - Regression-based models.  
-- Subject to change as we learn more advanced models (e.g., time series forecasting or tree-based models).  
+- Subject to change as we learn more advanced models.  
 
 We will evaluate model performance and select the best one based on accuracy and interpretability.  
 
