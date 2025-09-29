@@ -13,7 +13,7 @@ This project aims to predict the number of people playing computer games on the 
 
 ## Data Collection
 - **Data Sources:** [SteamDB.info](https://steamdb.info) (uses Steam API).  
-- **Collection Method:** Web scraping from the SteamDB website.  
+- **Collection Method:** API key: C6AE77E6054B6E818F6412D35F609F1D.  
 - **Frequency/Timeframe:** Hourly basis.  
 - **Scope:** Focus on the top 20 games in terms of current players.  
 
