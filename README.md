@@ -1,25 +1,26 @@
 # Project Proposal
 
 ## Project Description
-This project aims to predict the number of people playing computer games on the **Steam** platform at a given date and time. It further aims to predict the ranking of the most played games. The data will be collected from SteamDB, which displays data from the official Steam API.
+This project aims to predict the number of people playing computer games on the **Steam** platform at a given date and time. It further aims to predict the ranking of the most played games. The data will be collected using Steam API.
 
 ## Goals
 - Build a prediction model to estimate the number of players playing different games based on historical player count data.  
 - Identify factors that may influence results, such as:  
   - Whether it is a working day or weekend.  
   - Time of day (e.g., after work hours).  
-  - Regional time zones.  
-- Collect hourly player count data for the top 20 games from SteamDB, train the model, and use it to make predictions.  
+  - Regional time zones. (Unfortunately can not be isolated)
+  - Popularity of the game, but using top 20 games will reduce the variance hopefully. 
+- Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
 ## Data Collection
 - **Data Sources:** [SteamDB.info](https://steamdb.info) (uses Steam API).  
 - **Collection Method:** API key: C6AE77E6054B6E818F6412D35F609F1D.  
 - **Frequency/Timeframe:** Hourly basis.  
-- **Scope:** Focus on the top 20 games in terms of current players.  
+- **Scope:** Focus on the top 20 games by player count in terms of current players on October 5th.  
 
 ## Data Cleaning
 - Handle missing values and inconsistencies (e.g., promotions, updates, server shutdowns).  
-- Standardize data formats (e.g., datetime objects, consistent units).  
+- Standardize data formats (e.g., using UTC for datetime objects, consistent units).  
 - Remove duplicates and ensure consistency across games.  
 
 ## Feature Extraction
