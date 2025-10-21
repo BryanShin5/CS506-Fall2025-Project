@@ -14,10 +14,10 @@ This project aims to predict the number of people playing computer games on the 
 
 ## Data Collection
 - **Data Sources:** [SteamDB.info](https://steamdb.info) (uses Steam API).  
-- **Collection Method:** API key: C6AE77E6054B6E818F6412D35F609F1D.  
-- **Frequency/Timeframe:** Hourly basis.  
+- **Collection Method:** Download csv file from the website.  
+- **Frequency/Timeframe:** Hourly basis, 10minute basis for data from 10/14 to 10/20.  
 - **Scope:** Focus on the top 20 games by player count in terms of current players on October 20th.
-- **Name of Games:** Counter-Strike 2, Dota 2, Battlefield 6, PUBG: Battlegrounds, APEX Legends, Delta Force, 	Escape from Duckov, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V Enhanced, EA SPORTS FC™ 26, Warframe, War Thunder, Baldur's Gate 3, Hollow Knight: Silksong
+- **Name of Games:** Counter-Strike 2, Dota 2, Battlefield 6, PUBG: Battlegrounds, APEX Legends, Delta Force, Escape from Duckov, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V Enhanced, EA SPORTS FC™ 26, Warframe, War Thunder, Baldur's Gate 3, Hollow Knight: Silksong
 
 ## Data Cleaning
 - Handle missing values and inconsistencies (e.g., promotions, updates, server shutdowns).  
@@ -47,8 +47,8 @@ We will evaluate model performance and select the best one based on accuracy and
 - Interactive plots (optional), allowing users to input a game name and date/time to see predictions.  
 
 ## Test Plan
-- **Training set:** Data from September–October.  
-- **Test set:** Reserve data from November as a holdout.  
+- **Training set:** Data from September 20th – October.  
+- **Test set:** Reserve data starting from November 20th as a holdout.  
 - Use **k-fold cross-validation** on the training set to tune models.  
 
 ## GitHub & Collaboration Plan
