@@ -17,7 +17,7 @@ This project aims to predict the number of people playing computer games on the 
 - **Collection Method:** Download csv file from the website.  
 - **Frequency/Timeframe:** Hourly basis, 10minute basis for data from 10/14 to 10/20.  
 - **Scope:** Focus on the top 20 games by player count in terms of current players on October 20th.
-- **Name of Games:** Counter-Strike 2, Dota 2, Battlefield 6, PUBG: Battlegrounds, APEX Legends, Delta Force, Escape from Duckov, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V Enhanced, EA SPORTS FC™ 26, Warframe, War Thunder, Baldur's Gate 3, Hollow Knight: Silksong
+- **Name of Games:** Counter-Strike 2, Dota 2, PUBG: Battlegrounds, APEX Legends, Delta Force, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V, Warframe, Baldur's Gate 3, Hollow Knight: Silksong, Team Fortress 2, Dead by Daylight, DayZ, Call of Duty 
 
 ## Data Cleaning
 - Handle missing values and inconsistencies (e.g., promotions, updates, server shutdowns).  
