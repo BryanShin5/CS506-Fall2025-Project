@@ -59,3 +59,9 @@ The repository will include:
 - `docs/` for documentation.  
 
 Proposal and final results will be submitted through this GitHub repository.
+
+How to reproduce:
+run make setup in the terminal. Will create a virtual environment. 
+Then run .venv\Scripts\activate
+run make enable-widgets
+run make notebook. This will open up the notebook server.
