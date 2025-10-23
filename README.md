@@ -9,7 +9,8 @@ This project aims to predict the number of people playing computer games on the 
   - Whether it is a working day or weekend.  
   - Time of day (e.g., after work hours).  
   - Regional time zones. (Unfortunately can not be isolated)
-  - Popularity of the game, but using top 20 games will reduce the variance hopefully. 
+  - Popularity of the game, but using top 20 games will reduce the variance hopefully.
+  - Date since its release
 - Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
 ## Data Collection
@@ -25,12 +26,11 @@ This project aims to predict the number of people playing computer games on the 
 - Remove duplicates and ensure consistency across games.  
 
 ## Feature Extraction
-- Examples of features to extract:  
-  - Day of week.  
+- Features extracted:  
+  - Date.  
   - Time of day.  
   - Player count.  
-  - Game name.  
-  - Game age (time since release).  
+  - Game name (stored as name of csv).    
 - Aggregated / engineered features such as rolling averages and moving trends.  
 - Possible categorical features, such as genre or free-to-play vs. paid (noting potential bias).  
 
