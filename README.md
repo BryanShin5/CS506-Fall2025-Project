@@ -24,7 +24,7 @@ This project aims to predict the number of people playing computer games on the 
   - Weekend.csv maps dates to indicator variable
   - 20 csv files whose name is the name of the game, contains hourly player count from 09/20-10/20
 
-## Data Cleaning:##
+## Data Cleaning:
 - Using UTC for any time related data
 - Cropped data before September 20th to focus on recent month as a training set.
 
