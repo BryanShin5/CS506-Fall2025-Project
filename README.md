@@ -19,23 +19,23 @@ This project aims to predict the number of people playing computer games on the 
 - **Frequency/Timeframe:** Hourly basis, 10minute basis for data from 10/14 to 10/20.  
 - **Scope:** Focus on the top 20 games by player count in terms of current players on October 20th.
 - **Name of Games:** Counter-Strike 2, Dota 2, PUBG: Battlegrounds, APEX Legends, Delta Force, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V, Warframe, Baldur's Gate 3, Hollow Knight: Silksong, Team Fortress 2, Dead by Daylight, DayZ, Call of Duty
-- Contents:
-  - Game.csv that contains name of the game, indicator for clicker genre, release date, price
-  - Weekend.csv mapping dates to indicator for weekend (Including Friday to address possible time zone issues)
-
-## Data Cleaning
-- Handle missing values and inconsistencies (e.g., promotions, updates, server shutdowns).  
-- Standardize data formats (e.g., using UTC for datetime objects, consistent units).  
-- Remove duplicates and ensure consistency across games.  
+- **Contents:**
+  - Game.csv containing game related features
+  - Weekend.csv maps dates to indicator variable
+  - 20 csv files whose name is the name of the game, contains hourly player count from 09/20-10/20
 
 ## Feature Extraction
-- Features extracted:  
-  - Date.  
-  - Time of day.  
-  - Player count.  
-  - Game name (stored as name of csv).    
-- Aggregated / engineered features such as rolling averages and moving trends.  
-- Possible categorical features, such as genre or free-to-play vs. paid (noting potential bias).  
+- Features extracted for Game.csv:  
+  - Name of Game.  
+  - Genre(1 if it is a clicker game, 0 otherwise). Specifically chosen Clicker games since they encourage player to turn the game on even if they are Idle, contributing to player count.  
+  - Release date.  
+  - Price in US Dollar, 0 if available free.    
+- Features extracted for Weekend.csv:
+  - Date
+  - Indicator variable(1 if Friday or Weekend, 0 Otherwise). Holidays are not accounted due to global distribution of players, may bias towards certain regions.  
+- Features extracted for GameName.csv:
+  - Date (MM/DD)
+  - Time (H/M)  
 
 ## Modeling Plan
 We will experiment with several approaches, including:  
