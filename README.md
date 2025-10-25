@@ -1,4 +1,4 @@
-# Project Proposal
+# Midterm Report
 
 ## Project Description
 This project aims to predict the number of people playing computer games on the **Steam** platform at a given date and time. It further aims to predict the ranking of the most played games. The data will be collected using Steam API.
