@@ -19,7 +19,7 @@ This project aims to predict the number of people playing computer games on the 
 - **Frequency/Timeframe:** Hourly basis, 10minute basis for data from 10/14 to 10/20.  
 - **Scope:** Focus on the top 20 games by player count in terms of current players on October 20th.
 - **Name of Games:** Counter-Strike 2, Dota 2, PUBG: Battlegrounds, APEX Legends, Delta Force, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V, Warframe, Baldur's Gate 3, Hollow Knight: Silksong, Team Fortress 2, Dead by Daylight, DayZ, Call of Duty
-- **Contents:**
+- Contents:
 - Game.csv that contains name of the game, indicator for clicker genre, release date, price
 - Weekend.csv for 
 
