@@ -24,6 +24,10 @@ This project aims to predict the number of people playing computer games on the 
   - Weekend.csv maps dates to indicator variable
   - 20 csv files whose name is the name of the game, contains hourly player count from 09/20-10/20
 
+## Data Cleaning:##
+- Using UTC for any time related data
+- Cropped data before September 20th to focus on recent month as a training set.
+
 ## Feature Extraction
 - Features extracted for Game.csv:  
   - Name of Game.  
@@ -35,7 +39,8 @@ This project aims to predict the number of people playing computer games on the 
   - Indicator variable(1 if Friday or Weekend, 0 Otherwise). Holidays are not accounted due to global distribution of players, may bias towards certain regions.  
 - Features extracted for GameName.csv:
   - Date (MM/DD)
-  - Time (H/M)  
+  - Time (HH/MM/SS)
+  - Player Count
 
 ## Modeling Plan
 We will experiment with several approaches, including:  
@@ -44,15 +49,14 @@ We will experiment with several approaches, including:
 
 We will evaluate model performance and select the best one based on accuracy and interpretability.  
 
-## Visualization Plan
-- Line charts of number of players over time.  
-- Comparative charts showing relationships between features (e.g., day of week vs. player count).  
-- Interactive plots (optional), allowing users to input a game name and date/time to see predictions.  
+## Visualization of the data
+- Visualization of Hourly player counts data is available at /notebook/Interactive_Plot.ipynb
+- Any code that is used in the notebook is present in /src.
 
 ## Test Plan
-- **Training set:** Data from September 20th – October.  
+- **Training set:** Data from September 20th – October 20th.  
 - **Test set:** Reserve data starting from November 20th as a holdout.  
-- Use **k-fold cross-validation** on the training set to tune models.  
+ 
 
 ## GitHub & Collaboration Plan
 The repository will include:  
@@ -68,3 +72,8 @@ Proposal and final results will be submitted through this GitHub repository.
 - Then run .venv\Scripts\activate
 - run make enable-widgets
 - run make notebook. This will open up the notebook server.
+
+## Observations: ##
+- The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana and Bongo Cat. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
+- For games released earlier in time, the player count curve was stable than games that were recently released.
+
