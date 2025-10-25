@@ -13,12 +13,15 @@ This project aims to predict the number of people playing computer games on the 
   - Date since its release
 - Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
-## Data Collection
+## Data
 - **Data Sources:** [SteamDB.info](https://steamdb.info) (uses Steam API).  
-- **Collection Method:** Download csv file from the website.  
+- **Collection Method:** Download csv files conatining user count per time from the website, scrapping other game specific features from the SteamDB.    
 - **Frequency/Timeframe:** Hourly basis, 10minute basis for data from 10/14 to 10/20.  
 - **Scope:** Focus on the top 20 games by player count in terms of current players on October 20th.
-- **Name of Games:** Counter-Strike 2, Dota 2, PUBG: Battlegrounds, APEX Legends, Delta Force, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V, Warframe, Baldur's Gate 3, Hollow Knight: Silksong, Team Fortress 2, Dead by Daylight, DayZ, Call of Duty 
+- **Name of Games:** Counter-Strike 2, Dota 2, PUBG: Battlegrounds, APEX Legends, Delta Force, Rust, NARAKA: BLADEPOINT, Banana, Bongo Cat, Stardew Valley, Megabonk, Marvel Rivals, Grand Theft Auto V, Warframe, Baldur's Gate 3, Hollow Knight: Silksong, Team Fortress 2, Dead by Daylight, DayZ, Call of Duty
+- **Contents:**
+- Game.csv that contains name of the game, indicator for clicker genre, release date, price
+- Weekend.csv for 
 
 ## Data Cleaning
 - Handle missing values and inconsistencies (e.g., promotions, updates, server shutdowns).  
