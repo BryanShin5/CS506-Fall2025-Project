@@ -13,6 +13,15 @@ This project aims to predict the number of people playing computer games on the 
   - Date since its release
 - Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
+
+## GitHub Plan
+The repository will include:  
+- `data/` for datasets (with `.gitignore` to exclude large/raw data).  
+- `notebooks/` for exploration and analysis.  
+- `src/` for reusable code.  
+- `docs/` for documentation.  
+
+Proposal and final results will be submitted through this GitHub repository.
 ## Data
 - **Data Sources:** [SteamDB.info](https://steamdb.info) (uses Steam API).  
 - **Collection Method:** Download csv files conatining user count per time from the website, scrapping other game specific features from the SteamDB.    
@@ -56,16 +65,6 @@ We will evaluate model performance and select the best one based on accuracy and
 ## Test Plan
 - **Training set:** Data from September 20th – October 20th.  
 - **Test set:** Reserve data starting from November 20th as a holdout.  
- 
-
-## GitHub & Collaboration Plan
-The repository will include:  
-- `data/` for datasets (with `.gitignore` to exclude large/raw data).  
-- `notebooks/` for exploration and analysis.  
-- `src/` for reusable code.  
-- `docs/` for documentation.  
-
-Proposal and final results will be submitted through this GitHub repository.
 
 ## How to reproduce:
 - run make setup in the terminal. Will create a virtual environment. 
