@@ -57,6 +57,7 @@ We will experiment with several approaches, including:
 - Subject to change as we learn more advanced models.  
 
 We will evaluate model performance and select the best one based on accuracy and interpretability.  
+Yet the linear regression model seems pretty promising by far. 
 
 ## Visualization of the data
 - Visualization of Hourly player counts data is available at /notebook/Interactive_Plot.ipynb
@@ -72,7 +73,13 @@ We will evaluate model performance and select the best one based on accuracy and
 - run make enable-widgets
 - run make notebook. This will open up the notebook server.
 
-## Observations: ##
+## Observations: 
 - The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana and Bongo Cat. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
 - For games released earlier in time, the player count curve was stable than games that were recently released.
+- When not including hour sin and cos, changing the hour of the time I want to predict did not affect the result at all.
+- When included missing sin and cos, the line was lot closer to a linear plot.
 
+## Plans:
+- Fit more data, compare prediction accuracy and possibly identify more factors that may contribute to player count.
+- Seems like date since release does not affect the model much, need a way to modify that feature to capture growing trend for recently released games like Megabonk.
+- Return a ranking amongst those 20 games according to player count. 
