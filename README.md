@@ -17,7 +17,6 @@ This project aims to predict the number of people playing computer games on the 
 ## GitHub Plan
 The repository will include:  
 - `data/` for datasets (with `.gitignore` to exclude large/raw data).  
-- `notebooks/` for exploration and analysis.  
 - `src/` for reusable code.  
 - `docs/` for documentation.  
 
