@@ -41,7 +41,8 @@ Proposal and final results will be submitted through this GitHub repository.
   - Name of Game.  
   - Genre(1 if it is a clicker game, 0 otherwise). Specifically chosen Clicker games since they encourage player to turn the game on even if they are Idle, contributing to player count.  
   - Release date.  
-  - Price in US Dollar, 0 if available free.    
+  - Price in US Dollar, 0 if available free.
+  - Sin / Cos of day and hour, capturing repetitive trend of the data  
 - Features extracted for Weekend.csv:
   - Date
   - Indicator variable(1 if Friday or Weekend, 0 Otherwise). Holidays are not accounted due to global distribution of players, may bias towards certain regions.  
