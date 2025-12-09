@@ -13,6 +13,11 @@ This project aims to predict the number of people playing computer games on the 
   - Date since its release
 - Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
+## How to reproduce:
+- run make setup in the terminal. Will create a virtual environment. 
+- Then run .venv\Scripts\activate
+- run make enable-widgets
+- run make notebook. This will open up the notebook server.
 
 ## GitHub Plan
 The repository will include:  
@@ -66,12 +71,6 @@ Yet the linear regression model seems pretty promising by far.
 ## Test Plan
 - **Training set:** Data from September 20th – October 20th.  
 - **Test set:** Reserve data starting from November 20th as a holdout.  
-
-## How to reproduce:
-- run make setup in the terminal. Will create a virtual environment. 
-- Then run .venv\Scripts\activate
-- run make enable-widgets
-- run make notebook. This will open up the notebook server.
 
 ## Observations: 
 - The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana and Bongo Cat. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
