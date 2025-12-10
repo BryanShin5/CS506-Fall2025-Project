@@ -72,11 +72,13 @@ Proposal and final results will be submitted through this GitHub repository.
 - **Test set:** Reserve data from October 21st - November 21st as a holdout.
 - **Evaluation method**: R squared value
 
-## Observations: 
-- The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana and Bongo Cat. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
+## Results and Observations:
+- Model was successful predicting for some games like GTA5, Baldur's gate, Stardewvalley, DayZ, games that have solid user base and has been years after release.
+- The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
 - For games released earlier in time, the player count curve was stable than games that were recently released.
 - When not including hour sin and cos, changing the hour of the time I want to predict did not affect the result at all.
 - When included missing sin and cos, the line was lot closer to a linear plot.
+- Model was significantly weak predicting games recently released, possibly due to early fluctuation of users dominating prediction
 
 ## Limitations: 
 - sometimes the model predicted negative value
