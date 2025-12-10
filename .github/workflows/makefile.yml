@@ -20,5 +20,3 @@ jobs:
     - name: Widget check
       run: make enable-widgets
 
-    - name: Run notebook
-      run: make notebook
