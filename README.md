@@ -70,7 +70,8 @@ Yet the linear regression model seems pretty promising by far.
 
 ## Test Plan
 - **Training set:** Data from September 20th – October 20th.  
-- **Test set:** Reserve data starting from November 20th as a holdout.  
+- **Test set:** Reserve data starting from October 20th as a holdout.
+- **Evaluation method**: R squared value
 
 ## Observations: 
 - The shape of the player count curve repeated in a daily basis, yet not in clicker games like Banana and Bongo Cat. The curve was totally unpredictable there, which is a reason to note whether it is a clicker game or not.
