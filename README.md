@@ -16,7 +16,7 @@ This project aims to predict the number of people playing computer games on the 
 ## How to reproduce:
 - First unzip the data.zip folder into data directory
 - run make setup in the terminal, at the directory which InteractivePlot.ipynb is located. Will create a virtual environment. 
-- Then run .venv\Scripts\activate
+- Then run .venv\Scripts\activate (change back slash to slash on different OS)
 - run make enable-widgets
 - run make notebook. This will open up the notebook server.
 
@@ -84,7 +84,7 @@ Proposal and final results will be submitted through this GitHub repository.
 - Some under expectations on player count, possibly due to not regarding the period which major updates happened.
 - Performs well on games popular on specific regions, but not otherwise
 
-## Plans:
+## Possible improvement:
 - Fit more data, compare prediction accuracy and possibly identify more factors that may contribute to player count.
 - Seems like date since release does not affect the model much, need a way to modify that feature to capture growing trend for recently released games like Megabonk.
-- Return a ranking amongst those 20 games according to player count. 
+- Encode holidays, regional differences some how
