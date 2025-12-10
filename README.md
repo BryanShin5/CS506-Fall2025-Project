@@ -24,7 +24,7 @@ This project aims to predict the number of people playing computer games on the 
 The repository will include:  
 - `data/` for datasets (with `.gitignore` to exclude large/raw data).  
 - `src/` for reusable code.  
-Test workflow:
+## Test workflow:
 - tests on whether the makefile builds successfully
 - will run make setup and make enable widgets on push / PR creation
 
