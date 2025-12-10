@@ -248,7 +248,7 @@ def prepare_all_points(game_files, weekend_csv, game_csv):
     all_data = []
 
     for path in game_files:
-        game_name = os.path.splitext(os.path.basename(path))[0]
+        game_name = os.path.splitext(os.path.basename(path))[0].replace("_test", "")
         df = pd.read_csv(path)
 
         # Format strings
