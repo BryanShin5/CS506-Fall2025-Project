@@ -14,7 +14,8 @@ This project aims to predict the number of people playing computer games on the 
 - Collect hourly player count data for the top 20 games by number of players in a day from SteamDB, train the model, and use it to make predictions.  
 
 ## How to reproduce:
-- run make setup in the terminal. Will create a virtual environment. 
+- First unzip the data.zip folder into data directory
+- run make setup in the terminal, at the directory which InteractivePlot.ipynb is located. Will create a virtual environment. 
 - Then run .venv\Scripts\activate
 - run make enable-widgets
 - run make notebook. This will open up the notebook server.
@@ -23,7 +24,6 @@ This project aims to predict the number of people playing computer games on the 
 The repository will include:  
 - `data/` for datasets (with `.gitignore` to exclude large/raw data).  
 - `src/` for reusable code.  
-- `docs/` for documentation.  
 
 Proposal and final results will be submitted through this GitHub repository.
 ## Data
@@ -36,6 +36,7 @@ Proposal and final results will be submitted through this GitHub repository.
   - Game.csv containing game related features
   - Weekend.csv maps dates to indicator variable
   - 20 csv files whose name is the name of the game, contains hourly player count from 09/20-10/20
+  - 20 csv files whose name is name of the game + "_test", containing player count from 10-21~11-11. This is the test set I have used for testing.
 
 ## Data Cleaning:
 - Using UTC for any time related data
@@ -57,12 +58,7 @@ Proposal and final results will be submitted through this GitHub repository.
   - Player Count
 
 ## Modeling Plan
-We will experiment with several approaches, including:  
-- Regression-based models.  
-- Subject to change as we learn more advanced models.  
-
-We will evaluate model performance and select the best one based on accuracy and interpretability.  
-Yet the linear regression model seems pretty promising by far. 
+- Although not perfect, linear regression has exhibited some promising results, so using them for prediction.
 
 ## Visualization of the data
 - Visualization of Hourly player counts data is available at /notebook/Interactive_Plot.ipynb
@@ -70,7 +66,7 @@ Yet the linear regression model seems pretty promising by far.
 
 ## Test Plan
 - **Training set:** Data from September 20th – October 20th.  
-- **Test set:** Reserve data starting from October 20th as a holdout.
+- **Test set:** Reserve data from October 21st - November 21st as a holdout.
 - **Evaluation method**: R squared value
 
 ## Observations: 
@@ -78,6 +74,12 @@ Yet the linear regression model seems pretty promising by far.
 - For games released earlier in time, the player count curve was stable than games that were recently released.
 - When not including hour sin and cos, changing the hour of the time I want to predict did not affect the result at all.
 - When included missing sin and cos, the line was lot closer to a linear plot.
+
+## Limitations: 
+- sometimes the model predicted negative value
+- For some recently released games, the model was trapped in the early trend, causing predictions going extremely downhills or opposite.
+- Some under expectations on player count, possibly due to not regarding the period which major updates happened.
+- Performs well on games popular on specific regions, but not otherwise
 
 ## Plans:
 - Fit more data, compare prediction accuracy and possibly identify more factors that may contribute to player count.
